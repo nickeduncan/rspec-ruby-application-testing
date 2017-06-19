@@ -1,22 +1,6 @@
-class Card
-  def initialize(suit:, rank:)
-    @suit = suit
-    @rank = case rank
-      when :jack then 11
-      when :queen then 12
-      when :king then 13
-      else rank
-    end
-  end
+require 'spec_helper'
 
-  def suit
-    @suit
-  end
-
-  def rank
-    @rank
-  end
-end
+require 'card'
 
 RSpec.describe 'a playing card' do
 	it 'has a suit' do
