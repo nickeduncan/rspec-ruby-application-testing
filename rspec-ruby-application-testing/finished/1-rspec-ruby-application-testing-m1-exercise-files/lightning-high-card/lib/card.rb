@@ -55,8 +55,3 @@ class Card
     "#{id.upcase}#{s.fetch(suit)}"
   end
 end
-
-Rspec.describe 'a playing card' do
-  it 'has a suit'
-  it 'has a rank'
-end
